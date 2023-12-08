@@ -1,5 +1,5 @@
 #include <gtest/gtest.h> // Include Google Test header
-#include "groupthread_lib.h"
+#include "ThreadGroup.h"
 
 // Test case for adding threads to the group
 TEST(ThreadGroupTest, AddThreadTest) {
