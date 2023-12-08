@@ -36,7 +36,8 @@ namespace ThreadsGroup {
 	}
 
 	void ThreadGroup::createGroup() {
-		// Nothing is required to create a group in this implementation
+		std::unique_lock<std::mutex> lock(mutex_);
+    		closed_ = false;
 	}
 
 	bool ThreadGroup::addThread(std::function<void()> threadFunction) {
